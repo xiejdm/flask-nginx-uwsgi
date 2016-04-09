@@ -37,7 +37,7 @@ source insomnia/bin/activate(执行后变化(insomnia)[datacenter@localhost work
 ## 安装依赖
 pip install Flask Flask-Script Flask-SQLAlchemy Flask-Restless flask-excel pyexcel pyexcel-xls pyexcel-xlsx simplejson uwsgi
 ```
-> **Tip:** Error **ImportError: No module named MySQLdb** ----> **Slove:** 
+> **Tip 1:** Error **ImportError: No module named MySQLdb** ----> **Slove:** 
 > - sudo yum install MySQL-python
 > - sudo yum install python-devel mysql-devel
 > - git clone https://github.com/jehiah/mysql-python.git
@@ -45,6 +45,14 @@ pip install Flask Flask-Script Flask-SQLAlchemy Flask-Restless flask-excel pyexc
 > - python setup.py build
 > - python setup.py install (virtualenv 下不需要sudo)
 
+----------
+> **Tip 2:** Error **Ubuntu下pip安报错distutils.errors.DistutilsError: Setup script exited with error: command ‘gcc’ failed with exit status 1** ----> **Slove:** 
+> - 可能是缺少库libffi-dev
+> - apt-get install libffi-dev
+
+----------
+> **Tip 3:** Error **Ubuntu安装mysql-python时,EnvironmentError: mysql_config not found** ----> **Slove:** 
+> - sudo apt-get install libmysqlclient-dev
 
 ### nginx config
 
